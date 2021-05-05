@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./home";
 import History from "./history";
-
-import "./app.css";
+import "./App.css";
 // ที่รวม Routh ต่างๆ
 const App = () => {
   return (
