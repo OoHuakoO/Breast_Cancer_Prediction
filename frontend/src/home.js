@@ -94,17 +94,17 @@ const Home = () => {
           <input className="input-home" type="text" name="mitoses" required/>
         </div>
         <div className="column">
-          <label for="classlabel" className="text1-home">Class label</label>
-          <input className="input-home" type="text" name="classlabel" required/>
+          <label for="classlabel" className="text1-home">Machine learning</label>
+          <select name="ml" className="input-home" required>
+            <option value="0">Naivebayes</option>
+            <option value="1">Quadratic Discriminant Analysis</option>
+            <option value="2">Random Forest</option>
+          </select>
         </div>
       </div>
 
     </div>
 
-    {/* <div className="button-home">
-      <input className="result" type="submit" value="Results"></input>
-    </div>
-   */}
     {/* modal */}
     <div className="button-home">
     <Button className="result" onClick={handleShow}>Results</Button>
