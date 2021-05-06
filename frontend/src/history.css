@@ -1,0 +1,79 @@
+.h1-history{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Mali', cursive;
+    margin-top: 50px;
+}
+.container-history{
+    box-shadow: 0 0 8px black;
+    width: 1505px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Mali', cursive;
+    padding: 0px;
+}
+.column-history{
+    display: inline;
+    text-align: center;
+    padding: 0px;
+    margin-left: 10px;
+}
+.row-top{
+    background:  #6A5ACD;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    color: white;
+}
+.data{
+    font-size: 14px;
+}
+.top-history{
+    margin-top: 12px;
+}
+.text1-history{
+    width: 30px;
+    margin-left: 0px;
+}
+.text2-history{
+    width: 140px;
+}
+.text3-history{
+    width: 140px;
+}
+.text4-history{
+    width: 45px;
+}
+.text5-history,.text7-history,.text8-history,.text11-history,.text15-history{
+    width: 70px;
+}
+.text6-history,.text9-history,.text10-history,.text12-history,.text13-history{
+    width: 90px;
+}
+.text14-history{
+    width: 74px;
+}
+.text16-history{
+    width: 110px;
+}
+
+.line{
+    border-bottom: 0.5px solid rgb(136, 136, 136);
+}
+
+.button-history{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5rem; 
+    background:  #008080;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Mali', cursive;
+}
+.result-home:hover{
+    background:  #1b9c9c;
+}
