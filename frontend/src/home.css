@@ -58,6 +58,7 @@
     width: 95%;
     margin-left: 10px;
     border: rgb(192, 191, 191) solid 2px;
+    height: 30px;
 }
 .input-home:hover{
     box-shadow: 0 0 2px rgb(110, 110, 110); 
