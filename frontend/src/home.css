@@ -1,0 +1,123 @@
+.container-home{
+    width: 70%;
+    border-radius: 1rem;
+    margin-top: 50px;
+    height: auto;
+    /* background-color: red; */
+    box-shadow: 0 0 8px black; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.topic1-home{
+    background:  #6A5ACD;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 1rem;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Mali', cursive;
+}
+.personal , .detail{
+    width: 97%;
+    border: black solid 1px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-family: 'Mali', cursive;
+    padding-bottom: 20px;
+}
+.topic2-home{
+    background:  #008080;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    width: 250px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+.row{
+    padding: 10px 20px;
+}
+.column{
+    display: inline;
+    width: 50% !important;
+}
+.text1-home{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.input-home{
+    width: 95%;
+    margin-left: 10px;
+    border: rgb(192, 191, 191) solid 2px;
+}
+.input-home:hover{
+    box-shadow: 0 0 2px rgb(110, 110, 110); 
+}
+.radio-home{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.male{
+    margin-right: 15px;
+}
+.topic3-home{
+    background:  #008080;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    width: 385px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+.button-home{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.result{
+    width: 150px !important;
+    padding: 10px;
+    border: none !important;
+    border-radius: 0.5rem !important; 
+    background:  #6A5ACD !important;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Mali', cursive;
+    height: 44px;
+}
+.result:hover{
+    background:#7c6ed6 !important;
+}
+
+.history-home{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5rem; 
+    background:  #008080;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 50px;
+    font-family: 'Mali', cursive;
+}
+.history-home:hover{
+    background:  #1b9c9c;
+}
+
+.modal{
+    font-family: 'Mali', cursive;
+}
