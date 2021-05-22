@@ -10,7 +10,8 @@ CORS(app)
 
 
 @app.route('/prediction', methods=['POST'])
-def prediction():
+def predict():
+    predictionModel = ''
     if request.method == 'POST':
         data = request.get_json()
         thickness = data['thickness']
@@ -23,22 +24,22 @@ def prediction():
         normalNucleoli = data['normalNucleoli']
         mitoses = data['mitoses']
         machineLearning = data['machineLearning']
+        print(machineLearning)
         predictData = [[float(thickness), float(cellSize),
-                         float(cellShape), float(adhesion), float(epithelialSize), float(bareNiclei), float(blandCromatin), float(normalNucleoli), float(mitoses),]]
-        if machineLearning == 'naivebayes' :    
+                         float(cellShape), float(adhesion), float(epithelialSize), float(bareNiclei), float(blandCromatin), float(normalNucleoli), float(mitoses)]]
+        if machineLearning == 'Naivebayes' :    
                 print('a')
-                naiveBayes = pickle.load(open('Naivebayes.pkl', 'rb'))
-                predictionModel = naiveBayes.prediction(predictData)[0]
-         
+                naiveBayes = pickle.load(open('../model/Naivebayes.pkl', 'rb'))
+                predictionModel = naiveBayes.predict(predictData)[0]
         elif machineLearning == 'Quadratic Discriminant Analysis' :
                 print('b')
-                quadraticDiscriminantAnalysis = pickle.load(open('QuadraticDiscriminantAnalysis.pkl', 'rb'))
-                predictionModel = quadraticDiscriminantAnalysis.prediction(predictData)[0]
-
+                quadraticDiscriminantAnalysis = pickle.load(open('../model/QuadraticDiscriminantAnalysis.pkl', 'rb'))
+                predictionModel = quadraticDiscriminantAnalysis.predict(predictData)[0]
         elif machineLearning == 'Random Forest' :
                 print('c')
-                randomForest = pickle.load(open('RandomForest.pkl', 'rb'))
-                predictionModel = randomForest.prediction(predictData)[0]
-        return str(predictionModel)
+                randomForest = pickle.load(open('../model/RandomForest.pkl', 'rb'))
+                predictionModel = randomForest.predict(predictData)[0]
+        print(predictionModel)
+    return str(predictionModel)
 if __name__ == '__main__':
     app.run()
