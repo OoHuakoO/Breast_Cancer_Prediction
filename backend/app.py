@@ -10,7 +10,7 @@ CORS(app)
 
 
 @app.route('/prediction', methods=['POST'])
-def predict():
+def prediction():
     predictionModel = ''
     if request.method == 'POST':
         data = request.get_json()
