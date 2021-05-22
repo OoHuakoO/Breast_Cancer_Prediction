@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 from sklearn.linear_model import LogisticRegression
+
 from flask_cors import CORS
 
 
