@@ -20,7 +20,7 @@ const Home = () => {
     const [blandCromatin, setBlandCromatin] = useState();
     const [normalNucleoli, setNormalNucleoli] = useState();
     const [mitoses, setMitoses] = useState();
-    const [machineLearning, setMachineLearning] = useState();
+    const [machineLearning, setMachineLearning] = useState('Naivebayes');
 
   let data = {
     name,
@@ -41,9 +41,8 @@ const Home = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = async() => {
-
-    let sentAPI = await axios.post("/prediction" , data)
-
+    let sentAPI = await axios.post("http://127.0.0.1:5000/prediction" , data)
+    console.log(sentAPI.data.data)
     setShow(true)
   }
   
@@ -175,13 +174,13 @@ const Home = () => {
         </div>
         <div className="column">
           <label for="classlabel" className="text1-home">Machine learning</label>
-          <select name="ml" className="input-home" required 
+          <select value={machineLearning} name="ml" className="input-home" required 
           onChange={(e) => {
             setMachineLearning(e.target.value)
           }}>
-            <option value="0">Naivebayes</option>
-            <option value="1">Quadratic Discriminant Analysis</option>
-            <option value="2">Random Forest</option>
+            <option value="Naivebayes">Naivebayes</option>
+            <option value="Quadratic Discriminant Analysis">Quadratic Discriminant Analysis</option>
+            <option value="Random Forest">Random Forest</option>
           </select>
         </div>
       </div>
