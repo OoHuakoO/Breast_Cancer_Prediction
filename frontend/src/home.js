@@ -194,7 +194,7 @@ const Home = () => {
         <Modal.Header closeButton>
           <Modal.Title>Results</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{resultPredict == 2 ?  'ผลทำนายออกมาว่าเป็นเนื้องอกดี':'ผลทำนายออกมาว่าเป็นเนื้องอกร้าย'  }</Modal.Body>
+        <Modal.Body>{resultPredict == 2 ?  'ผลทำนายออกมาว่าเป็น "เนื้องอกดี"':'ผลทำนายออกมาว่าเป็น "เนื้องอกร้าย"'  }</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
